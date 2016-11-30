@@ -8,7 +8,7 @@ this.onmessage = function(e) {
     var date = Date.now();
     length = imageData.data.length / 4;
     var manipulate = determineFunction(type);
-    for (i = j = 0, ref = length; 0 <= ref ? j <= ref : j >= ref; i = 0 <= ref ? ++j : --j) {
+    for (i = 0; i < length; i++) {
       r = imageData.data[i * 4 + 0];
       g = imageData.data[i * 4 + 1];
       b = imageData.data[i * 4 + 2];
